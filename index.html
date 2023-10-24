@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasantri</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white flex justify-center items-center h-screen">
+    <div class="max-w-md w-full p-8 rounded-lg bg-black bg-opacity-50 text-center">
+        <h1 class="text-4xl font-extrabold mb-4">Form Pendaftaran Mahasantri</h1>
+        <div class="mb-4">
+            <input type="text" id="nama" class="w-full py-2 px-4 rounded-lg bg-black bg-opacity-70 border-2 border-red-400 placeholder-red-300 focus:outline-none" placeholder="Masukkan nama">
+        </div>
+        <div class="mb-4">
+            <input type="text" id="nohp" class="w-full py-2 px-4 rounded-lg bg-black bg-opacity-70 border-2 border-red-400 placeholder-red-300 focus:outline-none" placeholder="Nomor HP">
+        </div>
+        <div class="mb-4">
+            <input type="text" id="alamat" class="w-full py-2 px-4 rounded-lg bg-black bg-opacity-70 border-2 border-red-400 placeholder-red-300 focus:outline-none" placeholder="Alamat">
+        </div>
+        <div class="mb-4">
+            <select id="jurusan" class="w-full py-2 px-4 rounded-lg bg-black bg-opacity-70 border-2 border-red-400 text-red-400 focus:outline-none">
+                <option value="" disabled selected>Pilih Jurusan</option>
+                <option value="pengembangan">Pengembangan Perangkat Lunak</option>
+                <option value="marketing">Digital Marketing</option>
+            </select>
+        </div>
+        <div class="flex justify-between mb-4">
+            <button id="daftar" class="w-3/4 py-2 px-4 bg-red-500 hover:bg-red-700 rounded-lg font-bold mr-4">Daftar</button>
+            <button id="reset" class="w-1/4 py-2 px-4 bg-red-500 hover:bg-red-700 rounded-lg font-bold">Reset</button>
+        </div>
+        <div class="mt-8" id="hasil-daftar"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
